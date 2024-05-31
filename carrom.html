@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrom Board</title>
+    <style>
+        .carrom-board {
+            background-color: #dcd9c7;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        .striker {
+            width: 100px;
+            height: 100px;
+            background-color: #f0d9b5; 
+            border-radius: 50%; 
+            position: absolute;
+            border: 2px solid #333; 
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pocket {
+            width: 30px;
+            height: 30px;
+            background-color: #324e28; 
+            border-radius: 50%; 
+            position: absolute;
+            border: 2px solid #fff; 
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="carrom-board">
+       
+        <div class="striker center"></div>
+        
+    
+        <div class="pocket top-left"></div>
+        <div class="pocket top-right"></div>
+        <div class="pocket bottom-left"></div>
+        <div class="pocket bottom-right"></div>
+    </div>
+</body>
+</html>
